@@ -36,7 +36,7 @@ text_1_align = 2; // [0:Left, 1:Center, 2:Right]
 // Letters spacing:
 text_1_spacing = 1.0; // [.1:.1:5]
 // X-axis offset correction:
-text_1_x_offset = -1.0; // [-100:.1:100]
+text_1_x_offset = 0.0; // [-100:.1:100]
 // Y-axis offset correction:
 text_1_y_offset = 0.0; // [-100:.1:100]
 
@@ -170,7 +170,7 @@ safe_border = 1.2; // [.1:.1:5]
 
 /* [Tile sizes] */
 // Size of the tile
-tile_size = 24; // [10:100]
+tile_size = 24; // [10:.1:100]
 // Desired tile height (will be adapted to match printing settings)
 tile_height = 2.1; // [1:.1:5]
 // Corners radius
@@ -189,7 +189,7 @@ hole_y_offset = 4.6; // [1:.1:10]
 hole_diameter = 3.1; // [1:.1:5]
 // Spiral initial diameter.
 spiral_diameter = 1.0; // [1:.1:5]
-// Spiral start distance.abs
+// Spiral start distance.
 spiral_distance = 3.0; // [1:.1:10]
 // Spiral angle.
 spiral_angle = 120; // [0:1:180]
