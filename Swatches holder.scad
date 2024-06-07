@@ -74,7 +74,7 @@ top_x_offset = -1.0; // [-100:.1:100]
 // Text position Y-axis offset correction: (in mm)
 top_y_offset = 0.0; // [-100:.1:100]
 // Create top holes for collector:
-top_holes = 3; // [0:None, 1:Left, 2:Right, 3:Both]
+top_holes = 0; // [0:None, 1:Left, 2:Right, 3:Both]
 // Top holes diameter: (in mm)
 top_holes_diameter = 5.0; // [0.2:.1:10]
 // Top holes distance: (from left/right safe border to the middle of the hole, in mm)
@@ -154,7 +154,7 @@ right_style = "Bold"; // [Regular,Bold,Medium,SemiBold,Light,ExtraBold,Black,Ext
 // Text size: (in points)
 right_size = 5; // [1:.1:12]
 // Text Y-axis alignment:
-right_align = 0; // [0:Top, 1:Center, 2:Bottom]
+right_align = 1; // [0:Top, 1:Center, 2:Bottom]
 // Letters spacing:
 right_spacing = 1.0; // [.1:.1:5]
 // Text position X-axis offset correction: (in mm)
@@ -162,7 +162,7 @@ right_x_offset = 0.0; // [-100:.1:100]
 // Text position Y-axis offset correction: (in mm)
 right_y_offset = 0.0; // [-100:.1:100]
 // Create right holes for collector:
-right_holes = 3; // [0:None, 1:Top, 2:Bottom, 3:Both]
+right_holes = 0; // [0:None, 1:Top, 2:Bottom, 3:Both]
 // Right holes diameter: (in mm)
 right_holes_diameter = 5.0; // [0.2:.1:10]
 // Right holes distance: (from top/bottom safe border to the middle of the hole, in mm)
@@ -196,7 +196,7 @@ bottom_style = "Bold"; // [Regular,Bold,Medium,SemiBold,Light,ExtraBold,Black,Ex
 // Text size: (in points)
 bottom_size = 5; // [1:.1:12]
 // Text X-axis alignment:
-bottom_align = 0; // [0:Left, 1:Center, 2:Right]
+bottom_align = 1; // [0:Left, 1:Center, 2:Right]
 // Letters spacing:
 bottom_spacing = 1.0; // [.1:.1:5]
 // Text position X-axis offset correction: (in mm)
@@ -204,7 +204,7 @@ bottom_x_offset = 0.0; // [-100:.1:100]
 // Text position Y-axis offset correction: (in mm)
 bottom_y_offset = 0.0; // [-100:.1:100]
 // Create bottom holes for collector:
-bottom_holes = 3; // [0:None, 1:Left, 2:Right, 3:Both]
+bottom_holes = 0; // [0:None, 1:Left, 2:Right, 3:Both]
 // Bottom holes diameter: (in mm)
 bottom_holes_diameter = 5.0; // [0.2:.1:10]
 // Bottom holes distance: (from left/right safe border to the middle of the hole, in mm)
