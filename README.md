@@ -4,6 +4,8 @@ This is an [OpenSCAD](https://openscad.org/) script to generate filament and inf
 
 This script has been published and can be found and used directly on [MakerWorld](https://makerworld.com/en)'s [page](https://makerworld.com/en/models/481721).
 
+Please be sure to also check the swatches holder generator script you can find [here](https://github.com/zizzo81/swatches-holder).
+
 ## Summary
 
 - [Two scripts for two nozzles](#two-scripts-for-two-nozzles)
