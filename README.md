@@ -11,22 +11,22 @@ This script has been published and can be found and used directly on [MakerWorld
 - [Text clipping](#text-clipping)
 - [A guide through the tabs of parameters](#a-guide-through-the-tabs-of-parameters)
   - [Texts](#texts)
-  - Text 1 (upper side)
-  - Text 2 (below text 1)
-  - Texts 3, 4 and 5 alignment
-  - Text 3 (below hole)
-  - Text 4 (between text 3 and 5)
-  - Text 5 (lower-left corner)
-  - Infill display tile
-  - 3D printing settings
-  - Tile sizes
-  - Hole position and sizes
-  - Tweaks (fix things up)
-- What you can create
-  - Monochromatic swatches
-  - Infill display swatches
-  - Multi color swatches on mono printers or for non AMS compatible filaments (using pause at layer/height)
-  - Multi color swatches on multi color printers
+  - [Text 1 (upper side)](#text-1-upper-side)
+  - [Text 2 (below text 1)](#text-2-below-text-1)
+  - [Texts 3, 4 and 5 alignment](#texts-3-4-and-5-alignment)
+  - [Text 3 (below hole)](#text-3-below-hole)
+  - [Text 4 (between text 3 and 5)](#text-4-between-text-3-and-5)
+  - [Text 5 (lower-left corner)](#text-5-lower-left-corner)
+  - [Infill display tile](#infill-display-tile)
+  - [3D printing settings](#3d-printing-settings)
+  - [Tile sizes](#tile-sizes)
+  - [Hole position and sizes](#hole-position-and-sizes)
+  - [Tweaks (fix things up)](#tweaks-fix-things-up)
+- [What you can create](#what-you-can-create)
+  - [Monochromatic swatches](#monochromatic-swatches)
+  - [Infill display swatches](#infill-display-swatches)
+  - [Multi color swatches on mono printers or for non AMS compatible filaments (using pause at layer/height)](#multi-color-swatches-on-mono-printers-or-for-non-ams-compatible-filaments-using-pause-at-layerheight)
+  - [Multi color swatches on multi color printers](#multi-color-swatches-on-multi-color-printers)
 - [Version history](#version-history)
 - [Thanks](#thanks)
 
