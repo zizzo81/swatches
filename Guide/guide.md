@@ -2,11 +2,13 @@
 
 This is an [OpenSCAD](https://openscad.org/) script to generate filament and infill swatches tiles for display.
 
-This script has been published and can be found and used directly on [MakerWorld](https://makerworld.com/en)'s [page](https://makerworld.com/en/models/481721).
+This is a PDF version of the README.md file you can find [on original GitHub repository](https://github.com/zizzo81/swatches).
 
 Please be sure to also check the swatches holder generator script you can find [here](https://github.com/zizzo81/swatches-holder).
 
-[![Download this guide as PDF](./Guide/download_pdf.png)](./Guide%20to%20swatches%20generator.pdf) [![Published on MakerWorld](./Guide/maker_world.png)](https://makerworld.com/en/models/481721)
+This script has been published and can be found and used directly on [MakerWorld](https://makerworld.com/en)'s [page](https://makerworld.com/en/models/481721).
+
+[![Published on MakerWorld](./maker_world.png)](https://makerworld.com/en/models/481721)
 
 ## Summary
 
@@ -89,8 +91,8 @@ Note that the other sections have the same options that apply to the other texts
 
 | Parameter          | Description                                                  | unit | min  | max  | default         |
 | ------------------ | ------------------------------------------------------------ | ---- | ---- | ---- | --------------- |
-| text_1_direction   | This defines the direction where the text extends, if can **Extrude** out above the level of the tile, or **Chisel** inside the tile.<br /><br />![Extruded Chiseled sample](./Guide/extruded_chiselled_sample.png) |      |      |      | Chisel          |
-| text_1_height      | This defines the height of extrusion or chisel.<br /><br />![Extrude sample](./Guide/extrude_sample.png)![Chisel sample](./Guide/chisel_sample.png) | mm   | 0.1  | 5    | 0.4             |
+| text_1_direction   | This defines the direction where the text extends, if can **Extrude** out above the level of the tile, or **Chisel** inside the tile.<br /><br />![Extruded Chiseled sample](./extruded_chiselled_sample.png) |      |      |      | Chisel          |
+| text_1_height      | This defines the height of extrusion or chisel.<br /><br />![Extrude sample](./extrude_sample.png)![Chisel sample](./chisel_sample.png) | mm   | 0.1  | 5    | 0.4             |
 | text_1_font        | Selects the font of the text.<br />Choose the font you like most, but keep an eye on printability of fonts. |      |      |      | Liberation Mono |
 | text_1_custom_font | Here you can override the above setting by putting the name of a font installed in the system where this script is executed.<br />Please keep in mind that when you use Parametric Model Maker, the system the script is running on is MakerWorld's server, not your computer. |      |      |      | *empty*         |
 | text_1_style       | Choose the style of the text. **Note:** not all fonts support all styles. |      |      |      | Bold            |
@@ -166,7 +168,7 @@ Not inserting in this section the parameters that are already described somewher
 | Parameter               | Description                                                  | min  | max  | default |
 | ----------------------- | ------------------------------------------------------------ | ---- | ---- | ------- |
 | curves_quality          | Selects the quality of curves to be used when generating the model, the lowest the quality, the faster generation will take. You can work in Draft all the time for fast refresh, but you need to remember to switch back to Normal or something higher before exporting the model to be printed.<br /><br />Possible values:<br />- **Draft** - low quality, not suitable for printing;<br />- **Printable draft** - not for production, yet printable;<br />- **Normal**: normal quality, ready to print;<br />- **High quality**: good quality for high resolution printers.<br /><br />**Be warned:** Parametric Model Maker has a short timeout for script execution to avoid DDoS attacks, for this reason setting a quality too high could create a timeout error |      |      | Normal  |
-| magic_text_height_ratio | It's the ratio between the nominal height of a text (for example the above 2.5 of text 1) and the physical distance between the top face of an extruded uppercase letter (e. g.: "T" or “M”), and the bottom face of a letter extending below the baseline (e. g.: “q”, “y”, “g”). <br /><br />To obtain this value for more accurate positioning, set the font you desire and the nominal size, then extrude and export a piece with “Tq” as text. Use the Bambu Studio measure tool to check the distance. <br /><br />![Measure text](./Guide/measure_text.png)<br />This gives you 3,1mm, to calculate the ratio the proportion is 2.5 : 1 = 3.1 : *x*, which means *x* = 3.1 / 2.5, which is 1.24. This font has a magic ratio of 1.24. | 0.01 | 3    | 1.33    |
+| magic_text_height_ratio | It's the ratio between the nominal height of a text (for example the above 2.5 of text 1) and the physical distance between the top face of an extruded uppercase letter (e. g.: "T" or “M”), and the bottom face of a letter extending below the baseline (e. g.: “q”, “y”, “g”). <br /><br />To obtain this value for more accurate positioning, set the font you desire and the nominal size, then extrude and export a piece with “Tq” as text. Use the Bambu Studio measure tool to check the distance. <br /><br />![Measure text](./measure_text.png)<br />This gives you 3,1mm, to calculate the ratio the proportion is 2.5 : 1 = 3.1 : *x*, which means *x* = 3.1 / 2.5, which is 1.24. This font has a magic ratio of 1.24. | 0.01 | 3    | 1.33    |
 
 ## What you can create
 
@@ -174,39 +176,39 @@ Not inserting in this section the parameters that are already described somewher
 
 The easiest one, nothing to say: create a swatch as you want it.
 
-![Parametric Model Maker](./Guide/mono_online_editor.png)An example swatch to be printed using a single color.
+![Parametric Model Maker](./mono_online_editor.png)An example swatch to be printed using a single color.
 
-![print_mode is set to Monochromatic](./Guide/print_mode_monochromatic.png)
+![print_mode is set to Monochromatic](./print_mode_monochromatic.png)
 
 Make sure you selected **Monochromatic** for the parameter **print_mode** in the **3D printing settings** tab as shown in the image above.
 
-Remember to left click on ![Generate](./Guide/generate_button.png) to generate a version with your current settings.
+Remember to left click on ![Generate](./generate_button.png) to generate a version with your current settings.
 
-Click the ![Download](./Guide/download_button.png) button to download the object to a file.
+Click the ![Download](./download_button.png) button to download the object to a file.
 
-![Download format selection](./Guide/format_selection.png)
+![Download format selection](./format_selection.png)
 
-When this windows pops up, left click on the ![Download STL](./Guide/download_stl_button.png) button to select the .STL file format.
+When this windows pops up, left click on the ![Download STL](./download_stl_button.png) button to select the .STL file format.
 
-![Save as monochromatic.stl](./Guide/mono_save_as.png)
+![Save as monochromatic.stl](./mono_save_as.png)
 
 If your computer offers the possibility to save the file to a desired location, select a folder where you want to save it and choose a proper name, e. g. “monochromatic”, which fill create “monochromatic.stl”.
 
 If your browser is configured to automatically save files, you will find the file named “Compatible color swatch 0.*x* nozzle.stl” (where *x* is the dimension of the chosen nozzle) in the location you usually receive downloaded file, usually called the “Downloads” folder.
 
-![Drrag'n'drop monochromatic.stl over Bambu Studio](./Guide/mono_dragndrop.png)
+![Drrag'n'drop monochromatic.stl over Bambu Studio](./mono_dragndrop.png)
 
 Open [Bambu Studio](https://bambulab.com/en/download/studio) or your preferred slicer, start a new project and drag the file onto it.
 
-![Layers height in Bambu Studio](./Guide/mono_layers_height_bambu_studio.png)
+![Layers height in Bambu Studio](./mono_layers_height_bambu_studio.png)
 
 Make sure these settings in your slicer, exactly matches these settings in the [Parametric Model Maker](https://makerworld.com/en/makerlab/parametricModelMaker).
 
-![Layers height in Parametric Model Maker](./Guide/mono_layers_height_parametric_model_maker.png)
+![Layers height in Parametric Model Maker](./mono_layers_height_parametric_model_maker.png)
 
 Other settings are up to the user choice, you can now slice the plate and print it.
 
-![Example of a printed monochromatic tile](./Guide/mono_tile.jpg)Sample result of the above operations.
+![Example of a printed monochromatic tile](./mono_tile.jpg)Sample result of the above operations.
 
 ### Infill display swatches
 
@@ -214,7 +216,7 @@ Please read the previous section *Monochromatic swatches* for basic information 
 
 When creating an infill swatch, we need to follow a slightly different path, here's how to do it.
 
-![print_mode set to For infill display - outer part](./Guide/print_mode_infill_outer.png)
+![print_mode set to For infill display - outer part](./print_mode_infill_outer.png)
 
 Make sure you selected the **For infill display - outer part** in the **3D printing settings** tab.
 
@@ -222,27 +224,27 @@ Make sure to fill all the parameters in the **Infill display tile** tab.
 
 Click on the **Generate** button.
 
-![Parametric Model Maker](./Guide/infill_outer_editor.png)
+![Parametric Model Maker](./infill_outer_editor.png)
 
 Export this to a STL file (let's say “infill-outer.stl”.
 
-![print_mode set to For infill display - inner part](./Guide/print_mode_infill_inner.png)
+![print_mode set to For infill display - inner part](./print_mode_infill_inner.png)
 
 Change the **print_mode** parameter to **For infill display - inner part** and click on **Generate** again.
 
-![Parametric Model Maker](./Guide/infill_inner_editor.png)Export this to a STL file, let's say “infill-inner.stl”.
+![Parametric Model Maker](./infill_inner_editor.png)Export this to a STL file, let's say “infill-inner.stl”.
 
-![Drag'n'drop both files into Bambu Studio](./Guide/infill_dragndrop.png)
+![Drag'n'drop both files into Bambu Studio](./infill_dragndrop.png)
 
 Open a new project in Bambu Studio and drag both file at the same time on it.
 
-![Load these files as a single object with multiple parts? - Yes](./Guide/load_as_single_object.png)
+![Load these files as a single object with multiple parts? - Yes](./load_as_single_object.png)
 
 When asked if these has to be considered two parts of a single object, select **Yes**.
 
 Remember to make sure *Layers height* and *Initial layer height* match between your Bambu Studio project and the generator script parameters.
 
-![Bambu Studio - change infill](./Guide/bambu_studio_change_infill_inner.png)
+![Bambu Studio - change infill](./bambu_studio_change_infill_inner.png)
 
 Now follow these steps:
 
@@ -255,11 +257,11 @@ Now follow these steps:
 7. Set **Sparse infill density** to the value you declared in you tile text - if you did, or to a desired value anyway;
 8. Set **Sparse infill pattern** to the pattern you want to display in the tile.
 
-![Bambu Studio slice preview](./Guide/bambu_studio_preview_infill.png)A good preview of what's going to be printed is shown after you slice your plate.
+![Bambu Studio slice preview](./bambu_studio_preview_infill.png)A good preview of what's going to be printed is shown after you slice your plate.
 
 You're ready to print it.
 
-![Example of a printed infill display tile](./Guide/infill_tile.jpg)Sample of the above operations.
+![Example of a printed infill display tile](./infill_tile.jpg)Sample of the above operations.
 
 ### Multi color swatches on mono printers or for non AMS compatible filaments (using pause at layer/height)
 
@@ -267,39 +269,39 @@ Please read the *Monochromatic swatches* section for basic information about how
 
 A limitation of the monochromatic printer can be partially bypassed, printing the texts with another color by using some clever tricks, here's how to do it.
 
-![Parametric Model Maker](./Guide/color_editor.png)
+![Parametric Model Maker](./color_editor.png)
 
 First of all make sure you designed your tile with all the texts as extruded, this will not work with chiseled texts.
 
 Export it as STL and import into Bambu Studio following the same instructions for monochromatic printing until you reach the step where you slice it.
 
-![Bambu Studio slice preview](./Guide/bambu_studio_color_preview_0.png)
+![Bambu Studio slice preview](./bambu_studio_color_preview_0.png)
 
 Once you sliced the plate, use drag the **+** icon of the vertical scrollbar down.
 
-![The + icon in the vertical scrollbar](./Guide/bambu_studio_vertical_scrollbar_15.png)The **+** icon in the vertical scrollbar.
+![The + icon in the vertical scrollbar](./bambu_studio_vertical_scrollbar_15.png)The **+** icon in the vertical scrollbar.
 
 As you scroll top layers will disappear from view, continue scrolling down until only one layer with texts is visible.
 
-![Bambu Studio slice preview at layer 12](./Guide/bambu_studio_color_preview_1.png)
+![Bambu Studio slice preview at layer 12](./bambu_studio_color_preview_1.png)
 
 Now, right click on the **+** icon and a menu will pop out.
 
-![Popup menu on vertical scrollbar](./Guide/bambu_studio_vertical_scrollbar_12.png)
+![Popup menu on vertical scrollbar](./bambu_studio_vertical_scrollbar_12.png)
 
 Select the **Add Pause** item, the you will have to slice the plate again.
 
-![Bambu Studio slice preview with pause at layer](./Guide/bambu_studio_color_preview_2.png)
+![Bambu Studio slice preview with pause at layer](./bambu_studio_color_preview_2.png)
 
 Once you sliced it again, the scrollbar will show a “Pause” label where you set it and the layer will be drawn with another color.
 
 Now print this, when the printer is starting to print that layer, it will pause and the print head will be moved away from the piece and on the screen you will see a message.
 
-![Display of Bambu Lab X1C showing Pause at layer alert](./Guide/pause_at_layer.jpg)
+![Display of Bambu Lab X1C showing Pause at layer alert](./pause_at_layer.jpg)
 
 Change the filament in the printer, then press **Resume** to continue printing using the new color.
 
-![Example of a printed tile with two colors](./Guide/color_tile.jpg)
+![Example of a printed tile with two colors](./color_tile.jpg)
 
 In my opinion, results are beautiful.
 
@@ -309,33 +311,33 @@ Please read the *Monochromatic swatches* section for basic information about how
 
 The most easy way to print these, yet the most satisfying way to customize this.
 
-![print_mode set to Tile only](./Guide/print_mode_tile_only.png)
+![print_mode set to Tile only](./print_mode_tile_only.png)
 
 Once you draw your tile, be sure to select the **Tile only** option for the **print_mode** parameter in the **3D printing settings** tab and click on **Generate**.
 
-![Parametric Model Maker](./Guide/tile_only_editor.png)
+![Parametric Model Maker](./tile_only_editor.png)
 
 Click the **Download** button to export to a STL file, let's say tile.stl.
 
-![print_mode set to Texts only](./Guide/print_mode_texts_only.png)
+![print_mode set to Texts only](./print_mode_texts_only.png)
 
 Change the **print_mode** parameter to **Texts only** and click **Generate** button again.
 
-![Parametric Model Maker](./Guide/texts_only_editor.png)
+![Parametric Model Maker](./texts_only_editor.png)
 
 Click **Download** again and export this to a STL file and call it texts.stl.
 
-![Drag'n'drop both files into Bambu Studio](./Guide/multicolor_dragndrop.png)
+![Drag'n'drop both files into Bambu Studio](./multicolor_dragndrop.png)
 
 Open a new project in Bambu Studio and drag both file at the same time on it.
 
-![Load these files as a single object with multiple parts? - Yes](./Guide/load_as_single_object.png)
+![Load these files as a single object with multiple parts? - Yes](./load_as_single_object.png)
 
 When asked if these has to be considered two parts of a single object, select **Yes**.
 
 Remember to make sure *Layers height* and *Initial layer height* match between your Bambu Studio project and the generator script parameters.
 
-![Bambu Studio change colors](./Guide/bambu_studio_multicolor.png)
+![Bambu Studio change colors](./bambu_studio_multicolor.png)
 
 Now follow these steps:
 
